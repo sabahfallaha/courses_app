@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:loginuicolors/models/course_model.dart';
-import 'package:loginuicolors/pages/course_details.dart';
+
+import '../model/course_model.dart';
 
 class CustomCard extends StatelessWidget {
   CustomCard({

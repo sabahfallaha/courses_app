@@ -1,5 +1,6 @@
-import 'package:loginuicolors/helper/api.dart';
 import 'package:http/http.dart' as http;
+
+import '../helper/api.dart';
 
 class SignupServise {
   String signupUrl = 'signup/';

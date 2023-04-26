@@ -6,6 +6,8 @@ import 'package:loginuicolors/models/student_model.dart';
 import 'package:loginuicolors/services/get_all_courses_service.dart';
 import 'package:loginuicolors/widgets/custom_card.dart';
 
+import 'custom_card.dart';
+
 class CourseList extends StatelessWidget {
   CourseList({Key? key}) : super(key: key);
   @override

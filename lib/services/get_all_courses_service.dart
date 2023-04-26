@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:loginuicolors/models/course_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../helper/api.dart';
+import '../model/course_model.dart';
 
 class GetAllCoursesService {
   Future<List<CourseModel>> getAllCourses() async {
