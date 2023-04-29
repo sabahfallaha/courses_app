@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:loginuicolors/cubit/student_cubit.dart';
-import 'package:loginuicolors/models/course_model.dart';
-import 'package:loginuicolors/models/student_model.dart';
-import 'package:loginuicolors/services/get_all_courses_service.dart';
-import 'package:loginuicolors/widgets/custom_card.dart';
 
+import '../cubit/student_cubit.dart';
+import '../model/course_model.dart';
+import '../model/student_model.dart';
+import '../services/get_all_courses_service.dart';
 import 'custom_card.dart';
 
 class CourseList extends StatelessWidget {
