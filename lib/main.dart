@@ -1,10 +1,13 @@
+import 'package:courses_app/pages/course_details.dart';
+import 'package:courses_app/pages/home_page.dart';
 import 'package:courses_app/pages/loading_page.dart';
 import 'package:courses_app/pages/login.dart';
+import 'package:courses_app/pages/register.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'cubit/student_cubit.dart';
-import 'pages/course_details.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,8 +45,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    var RegisterPage;
-    var HomePage;
     return BlocProvider(
       create: (context) => StudentCubit(),
       child: MaterialApp(
