@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
     String? token = _prefs.getString('token');
     if (token != null) {
       setState(() {
-        page = LoginPage();
+        page = HomePage();
       });
     } else {
       setState(() {

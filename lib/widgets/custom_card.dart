@@ -75,12 +75,13 @@ class CustomCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 62,
-            top: -60,
+            //   right: 62,
+            //  top: -60,
             child: Image.asset(
               'assets/p.jpg',
-              // height: ,
-              width: 20,
+              fit: BoxFit.fill,
+              height: 100,
+              width: 500,
               // course.image
             ),
             height: 100,
