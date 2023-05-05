@@ -8,7 +8,11 @@ import '../services/get_all_courses_service.dart';
 import 'custom_card.dart';
 
 class CourseList extends StatelessWidget {
-  CourseList({Key? key}) : super(key: key);
+  CourseList(
+      {
+      // required Section section;
+      Key? key})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<StudentCubit, Student>(
