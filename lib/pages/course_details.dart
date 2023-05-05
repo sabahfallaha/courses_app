@@ -38,27 +38,26 @@ class CourseDetails extends StatelessWidget {
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text(
-                              course.name,
-                              style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
+                            // Text(
+                            //   course.name,
+                            //   style: TextStyle(
+                            //     fontSize: 25,
+                            //     fontWeight: FontWeight.bold,
+                            //   ),
+                            // ),
+                            // SizedBox(
+                            //   height: 20,
+                            // ),
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Center(
-                                  child: Text(
-                                    'الصيدلانية: رغد شيخ زين',
-                                    style: TextStyle(
-                                      color: Color(0xff00a7f2),
-                                      fontSize: 25,
-                                      fontWeight: FontWeight.w500,
-                                    ),
+                                Text(
+                                  //teacher
+                                  course.name,
+                                  style: TextStyle(
+                                    color: Color(0xff00a7f2),
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 )
                               ],
@@ -102,27 +101,27 @@ class CourseDetails extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
-                  left: MediaQuery.of(context).size.width / 1.3,
-                  child: Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: const BoxDecoration(
-                        color: Color(0xff00a7f2),
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black12,
-                            blurRadius: 6,
-                            spreadRadius: 4,
-                          )
-                        ]),
-                    child: const Icon(
-                      Icons.favorite_rounded,
-                      color: Colors.white,
-                      size: 30,
-                    ),
-                  ),
-                )
+                // Positioned(
+                //   left: MediaQuery.of(context).size.width / 1.3,
+                //   child: Container(
+                //     padding: const EdgeInsets.all(12),
+                //     decoration: const BoxDecoration(
+                //         color: Color(0xff00a7f2),
+                //         shape: BoxShape.circle,
+                //         boxShadow: [
+                //           BoxShadow(
+                //             color: Colors.black12,
+                //             blurRadius: 6,
+                //             spreadRadius: 4,
+                //           )
+                //         ]),
+                //     child: const Icon(
+                //       Icons.favorite_rounded,
+                //       color: Colors.white,
+                //       size: 30,
+                //     ),
+                //   ),
+                // )
               ],
             )
           ]),
