@@ -1,6 +1,9 @@
+import 'package:courses_app/model/section_model.dart';
 import 'package:flutter/material.dart';
 
+import '../constant.dart';
 import '../model/course_model.dart';
+import '../widgets/section_list.dart';
 
 class CourseDetails extends StatelessWidget {
   CourseDetails({Key? key}) : super(key: key);
@@ -9,7 +12,10 @@ class CourseDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     CourseModel course =
         ModalRoute.of(context)!.settings.arguments as CourseModel;
-
+    List<SectionModel> list = [
+      SectionModel(id: 1, name: 'sec 1', description: 'description'),
+      SectionModel(id: 2, name: 'sec 2', description: 'description')
+    ];
     return Scaffold(
       body: SingleChildScrollView(
           child: SafeArea(
@@ -55,7 +61,7 @@ class CourseDetails extends StatelessWidget {
                                   //teacher
                                   course.name,
                                   style: TextStyle(
-                                    color: Color(0xff00a7f2),
+                                    color: kPrimaryColor,
                                     fontSize: 25,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -96,7 +102,27 @@ class CourseDetails extends StatelessWidget {
                                 color: Colors.black54,
                               ),
                               textAlign: TextAlign.justify,
-                            )
+                            ),
+
+                            SizedBox(
+                              height: 30,
+                            ),
+                            SectionCard(section: list[0]),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            SectionCard(section: list[1]),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            SectionCard(section: list[1]),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            SectionCard(section: list[1]),
+                            SizedBox(
+                              height: 30,
+                            ),
                           ]),
                     ),
                   ),
@@ -151,7 +177,7 @@ class CustomBox extends StatelessWidget {
             num,
             style: TextStyle(
               fontSize: 18,
-              color: Color(0xff00a7f2),
+              color: kPrimaryColor,
             ),
           ),
           Text(
