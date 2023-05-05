@@ -1,3 +1,4 @@
+import 'package:courses_app/model/section_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -8,11 +9,7 @@ import '../services/get_all_courses_service.dart';
 import 'custom_card.dart';
 
 class CourseList extends StatelessWidget {
-  CourseList(
-      {
-      // required Section section;
-      Key? key})
-      : super(key: key);
+  CourseList({required SectionModel section, Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<StudentCubit, Student>(

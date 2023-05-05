@@ -30,11 +30,11 @@ class _MyAppState extends State<MyApp> {
   }
 
   void checkLogin() async {
-    SharedPreferences _prefs = await SharedPreferences.getInstance();
-    String? token = _prefs.getString('token');
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? token = prefs.getString('token');
     if (token != null) {
       setState(() {
-        page = HomePage();
+        page = const HomePage();
       });
     } else {
       setState(() {
