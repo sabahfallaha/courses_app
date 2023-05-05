@@ -17,8 +17,18 @@ class CourseDetails extends StatelessWidget {
       SectionModel(id: 2, name: 'sec 2', description: 'description')
     ];
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: KSecondaryColor,
+        elevation: 0,
+        centerTitle: true,
+        title: Text(
+          'My Courses',
+          style: TextStyle(
+            color: kPrimaryColor,
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
-          child: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(top: 25),
           child: Column(children: [
@@ -152,7 +162,7 @@ class CourseDetails extends StatelessWidget {
             )
           ]),
         ),
-      )),
+      ),
     );
   }
 }
@@ -177,14 +187,14 @@ class CustomBox extends StatelessWidget {
             num,
             style: TextStyle(
               fontSize: 18,
-              color: kPrimaryColor,
+              color: KSecondaryColor,
             ),
           ),
           Text(
             text,
             style: TextStyle(
               fontSize: 16,
-              color: Colors.black54,
+              color: kPrimaryColor,
             ),
           ),
         ],

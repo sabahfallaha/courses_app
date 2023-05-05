@@ -15,7 +15,7 @@ class SectionCard extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: kPrimaryColor,
+          color: KSecondaryColor,
           borderRadius: BorderRadius.circular(16),
         ),
         child: ListTile(
@@ -23,7 +23,7 @@ class SectionCard extends StatelessWidget {
           title: Text(
             section.name,
             style: TextStyle(
-                color: KSecondaryColor,
+                color: kPrimaryColor,
                 fontSize: 22,
                 fontWeight: FontWeight.bold),
           ),

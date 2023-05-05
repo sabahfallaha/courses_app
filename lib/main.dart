@@ -34,11 +34,11 @@ class _MyAppState extends State<MyApp> {
     String? token = prefs.getString('token');
     if (token != null) {
       setState(() {
-        page = const HomePage();
+        page = LoginPage();
       });
     } else {
       setState(() {
-        page = HomePage();
+        page = LoginPage();
       });
     }
   }
