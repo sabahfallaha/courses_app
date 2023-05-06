@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     return BlocBuilder<StudentCubit, Student>(
       builder: (BuildContext context, Student state) {
         return Scaffold(
+          //  drawer: Container(),
           appBar: AppBar(
             backgroundColor: KSecondaryColor,
             elevation: 0,

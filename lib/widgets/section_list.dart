@@ -1,3 +1,4 @@
+import 'package:courses_app/pages/video_page.dart';
 import 'package:flutter/material.dart';
 
 import '../constant.dart';
@@ -11,7 +12,10 @@ class SectionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        //  Navigator.pushNamed(context, CourseDetails.id, arguments: course);
+        Navigator.pushNamed(
+          context,
+          VideoPage.id,
+        );
       },
       child: Container(
         decoration: BoxDecoration(

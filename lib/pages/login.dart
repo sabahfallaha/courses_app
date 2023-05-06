@@ -115,9 +115,9 @@ class _LoginPageState extends State<LoginPage> {
                                                 student.printAttributes();
                                                 print("from storage:");
                                                 //    print(Api.readToken());
-                                                BlocProvider.of<StudentCubit>(
-                                                        context)
-                                                    .login(student);
+                                                // BlocProvider.of<StudentCubit>(
+                                                //         context)
+                                                // .login(student);
                                                 Api().upDateSharedPreferences(
                                                     student.token);
                                                 print('shared:');
