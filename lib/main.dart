@@ -3,6 +3,7 @@ import 'package:courses_app/pages/home_page.dart';
 import 'package:courses_app/pages/loading_page.dart';
 import 'package:courses_app/pages/login.dart';
 import 'package:courses_app/pages/register.dart';
+import 'package:courses_app/pages/video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -55,6 +56,7 @@ class _MyAppState extends State<MyApp> {
           LoginPage.id: (context) => LoginPage(),
           HomePage.id: (context) => HomePage(),
           CourseDetails.id: (context) => CourseDetails(),
+          VideoPage.id: (context) => VideoPage(),
         },
       ),
     );
