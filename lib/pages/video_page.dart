@@ -1,6 +1,7 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import 'package:window_manager/window_manager.dart';
 
 class VideoPage extends StatefulWidget {
   const VideoPage({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class VideoPage extends StatefulWidget {
   State<VideoPage> createState() => _VideoPageState();
 }
 
-class _VideoPageState extends State<VideoPage> {
+class _VideoPageState extends State<VideoPage> with WindowListener {
   FlickManager flickManager = FlickManager(
       videoPlayerController: VideoPlayerController.network(
           "https://mazwai.com/videvo_files/video/free/2016-04/small_watermarked/the_valley-graham_uheslki_preview.webm"));
@@ -18,6 +19,12 @@ class _VideoPageState extends State<VideoPage> {
   void dispose() {
     flickManager.dispose();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    windowManager.addListener(this);
+    super.initState();
   }
 
   @override
