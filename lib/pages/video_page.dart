@@ -9,7 +9,7 @@ class VideoPage extends StatefulWidget {
   State<VideoPage> createState() => _VideoPageState();
 }
 
-class _VideoPageState extends State<VideoPage> with WindowListener {
+class _VideoPageState extends State<VideoPage> {
   FlickManager flickManager = FlickManager(
       videoPlayerController: VideoPlayerController.network(
           "https://mazwai.com/videvo_files/video/free/2016-04/small_watermarked/the_valley-graham_uheslki_preview.webm"));

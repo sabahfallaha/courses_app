@@ -22,6 +22,28 @@ class _HomePageState extends State<HomePage> {
         return Scaffold(
           //  drawer: Container(),
           appBar: AppBar(
+            leading: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+                color: kPrimaryColor,
+              ),
+            ),
+            //  actions: [
+            // IconButton(
+            //   onPressed: () {},
+            //   icon: Icon(Icons.call),
+            // ),
+            //   IconButton(
+            //     onPressed: () {
+            //       Drawer();
+            //     },
+            //     icon: Icon(
+            //       Icons.menu,
+            //       color: kPrimaryColor,
+            //     ),
+            //   ),
+            // ],
             backgroundColor: KSecondaryColor,
             elevation: 0,
             centerTitle: true,

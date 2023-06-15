@@ -6,11 +6,17 @@ import 'package:courses_app/pages/register.dart';
 import 'package:courses_app/pages/video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_windowmanager/flutter_windowmanager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'cubit/student_cubit.dart';
 
 void main() {
   runApp(MyApp());
+  screenSecure();
+}
+
+screenSecure() async {
+  await FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
 }
 
 class MyApp extends StatefulWidget {
@@ -34,7 +40,7 @@ class _MyAppState extends State<MyApp> {
     String? token = prefs.getString('token');
     if (token != null) {
       setState(() {
-        page = LoginPage();
+        page = HomePage();
       });
     } else {
       setState(() {
