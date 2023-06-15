@@ -1,7 +1,6 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:window_manager/window_manager.dart';
 
 class VideoPage extends StatefulWidget {
   const VideoPage({Key? key}) : super(key: key);
@@ -19,12 +18,6 @@ class _VideoPageState extends State<VideoPage> with WindowListener {
   void dispose() {
     flickManager.dispose();
     super.dispose();
-  }
-
-  @override
-  void initState() {
-    windowManager.addListener(this);
-    super.initState();
   }
 
   @override
