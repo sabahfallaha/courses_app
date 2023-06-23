@@ -24,7 +24,7 @@ class _LoadingPageState extends State<LoadingPage> {
           //   ),
           // ),
           child: Center(
-            child: Image.asset('assets/l.png'),
+            child: Image.asset('assets/icon.png'),
           )),
     );
   }
