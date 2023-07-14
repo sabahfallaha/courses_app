@@ -1,11 +1,7 @@
 import 'package:courses_app/pages/register.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:http/http.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import '../cubit/student_cubit.dart';
 import '../helper/api.dart';
 import '../model/student_model.dart';
 import '../services/login_service.dart';
@@ -32,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/login.png'), fit: BoxFit.cover),
+              image: AssetImage('assets/login.jpg'), fit: BoxFit.cover),
         ),
         child: Scaffold(
           backgroundColor: Colors.transparent,
